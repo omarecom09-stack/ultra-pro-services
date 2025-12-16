@@ -46,7 +46,7 @@ export const SERVICES: Service[] = [
     category: 'تصميم وتطوير شعارات',
     shortDescription: 'نقدم لك شعاراً يعكس هوية شركتك بلمسة إبداعية.',
     description: 'احصل على تصميم شعار فريد ومميز لعلامتك التجارية. نقوم بدراسة السوق والمنافسين لنقدم لك فكرة إبداعية تلتصق بذهن العميل.',
-    image: 'https://picsum.photos/800/600?random=1',
+    image: '/portfolio/post.png',
     rating: 4.9,
     reviewsCount: 120,
     portfolio: getImgPortfolio(100),
@@ -57,21 +57,30 @@ export const SERVICES: Service[] = [
     }
   },
   {
-    id: '2',
-    title: 'تصميم منشورات سوشيال ميديا',
-    category: 'تصاميم سوشيال ميديا',
-    shortDescription: 'تصاميم جذابة لمنصات التواصل الاجتماعي تزيد من تفاعل جمهورك.',
-    description: 'خدمة متكاملة لتصميم بوستات انستقرام، تويتر، وفيسبوك. نركز على الهوية البصرية وتناسق الألوان.',
-    image: 'https://picsum.photos/800/600?random=2',
-    rating: 4.8,
-    reviewsCount: 85,
-    portfolio: getImgPortfolio(200),
-    packages: {
-        basic: { ...mockPackages.basic, price: '20$' },
-        standard: { ...mockPackages.standard, price: '50$' },
-        premium: { ...mockPackages.premium, price: '100$' }
-    }
+  id: '2',
+  title: 'تصميم منشورات سوشيال ميديا',
+  category: 'تصاميم سوشيال ميديا',
+  shortDescription: 'تصميم احترافي لمنصات التواصل الاجتماعي.',
+  description: 'نقدّم تصاميم جذابة لمنصات التواصل الاجتماعي تساعدك على بناء هوية قوية وزيادة التفاعل.',
+  image: 'https://picsum.photos/800/600?random=2',
+  rating: 4.8,
+  reviewsCount: 85,
+
+  portfolio: [
+    {
+      id: 'p1',
+      title: 'شعار شركة',
+      image: '/portfolio/logo.png',
+    },
+  ],
+
+  packages: {
+    basic: { ...mockPackages.basic, price: '20$' },
+    standard: { ...mockPackages.standard, price: '50$' },
+    premium: { ...mockPackages.premium, price: '100$' },
   },
+}
+
   {
     id: '3',
     title: 'برمجة متجر إلكتروني متكامل',
